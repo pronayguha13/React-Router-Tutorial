@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "../App.css";
 
 const ItemDetails = ({ match }) => {
   const [item, setItem] = useState({
@@ -8,7 +8,7 @@ const ItemDetails = ({ match }) => {
 
   useEffect(() => {
     fetchItem();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchItem = async () => {

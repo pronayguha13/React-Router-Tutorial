@@ -18,8 +18,7 @@ export const Routes = (props) => {
 };
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
-  // eslint-disable-next-line no-unused-vars
-  const { isAuthenticated, authenticationHandler } = useContext(LoginContext);
+  const { isAuthenticated } = useContext(LoginContext);
   return (
     <Route
       {...rest}
